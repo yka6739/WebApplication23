@@ -1,0 +1,25 @@
+﻿@page "/new"
+
+<EditForm Model=" person" OnValidSubmit="Create">
+
+    <InputNumber class="form-check" @bind-Value="@person.Id"></InputNumber>
+    <InputText class="form-check" @bind-Value="@person.Name"></InputText>
+    <InputText class="form-check" @bind-Value="@person.Address"></InputText>
+    <InputText class="form-check" @bind-Value="@person.Course"></InputText>
+
+    <button class="btn btn-success" type="submit" >Save...</button>
+</EditForm>
+
+
+
+@code {
+    private Person person = new Person();
+    private void Create()
+        {
+        
+
+
+
+        }
+
+}
